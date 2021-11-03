@@ -28,4 +28,6 @@ app.use("/api/v1", payment);
 //error Hander
 app.use(errorMiddleware);
 
+app. get('/', function(req, res){ res. send("Hello world!"); });
+
 module.exports = app;
